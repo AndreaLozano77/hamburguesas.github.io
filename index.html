@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500&display=swap" rel="stylesheet">
+    <title>mi Proyecto</title>
+</head>
+<body>
+    <h1 class="titulo">Hamburguesas Online</h1>
+    <h4>¡Llega en <span class="speed">45 minutos</span> o...te sale <span class="speed">GRATIS</span>!</h4>
+    <hr>
+
+    <div class="container">
+
+        <div id="oferta" class="oferta">
+            <img src="images/animada4.jpeg" width="250px" height="400px" alt="" class="animada" >
+            <!-- <img src="images/oferta.jpg" width="700px" height="400px" alt="oferta" class="superOferta"> -->
+        </div>
+        <!--En el botón "Ver menú está el evento que dispara la acción"-->
+        <input type="button" value="Ver Menú" class="btn" id="btn-menu" onclick="mostrarMenu()"> 
+
+        <div id="menu">
+            <section class="principal">
+
+                <!----------------------------------->
+                <!--PLANTILLA para alimentar con JS-->
+                <!----------------------------------->
+
+                <template id="template-card">
+                    <figure class="card">
+                        <img>
+                        <figcaption></figcaption>
+                    </figure>
+                </template>
+
+                <!----------------------------------->
+                <!--FIN de la PLANTILLA ------------->
+                <!-----------------------------------> 
+
+            </section>
+
+            <button class="btn" id="ver-mas" onclick="tarjetaMenu()">Ver más</button>
+        </div>
+
+
+
+    <!--Sección donde usuario ejecutará sus acciones de pedido y compra-->
+        <section class="operaciones">
+ 
+            <table>
+                <caption>¡Haz tu pedido y come<span class="speed"> delicioso!</span> !</caption>
+                <tr>
+                    <th>Producto</th>
+                    <th>Item</th>
+                    <th>Cantidad</th>
+                    <th>Acción</th>
+                    <th>Total</th>
+                </tr>
+        
+                <tr>
+                    <td>Hamburguesa</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td><span class="editar" onclick="transformarEnEditable(this)">Editar</span></td>
+                </tr>
+        
+                <tr>
+                    <td>Papas Fritas</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td><span class="editar" onclick="transformarEnEditable(this)">Editar</span></td>
+                </tr>
+        
+                <tr>
+                    <td>Extra de Queso</td> 
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td><span class="editar" onclick="transformarEnEditable(this)">Editar</span></td>
+                </tr>
+        
+                <tr>
+                    <td>Extra de Tocino</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td><span class="editar" onclick="transformarEnEditable(this)">Editar</span></td>
+        
+                </tr>
+
+                <tr>
+                    <td>Extra de Pepinillos</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td><span class="editar" onclick="transformarEnEditable(this)">Editar</span></td>
+        
+                </tr>
+        
+            </table>
+        </section>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
