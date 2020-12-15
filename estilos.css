@@ -1,0 +1,138 @@
+/* Andrea Lozano Cataño- curso de javaScript */
+
+/*======================================================*/
+/* Sección de tarjetas de productos*/
+/*======================================================*/
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} */
+
+body {
+    font-family: 'Caveat', cursive;
+    background: #faf7d0;
+}
+
+.titulo {
+    font-size: 58px;
+    text-align: center;
+    margin: 30px auto 10px;
+    color: brown;
+}
+
+h4 {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.animada {
+    display: block;
+    margin: auto;
+}
+
+.superOferta {
+    display: block;
+    width: 300px;
+    height: auto;
+    margin: 0 auto 20px;
+}
+
+#btn-menu {
+    width: 150px;
+    margin: 0 auto 20px;
+    display: block;
+}
+
+#menu {
+    display:none;
+}
+
+.principal {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px 0px #B79FC9;;
+}
+ 
+.btn {
+    background-color: #7ee271;
+    margin: 0 90px 15px;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 2px 2px 2px 0;
+    border: none;
+    outline: none;
+}
+.btn:hover {
+    background-color: #5ad34a;
+}
+
+#ver-mas {
+    display: none;
+}
+.operaciones {
+    width: 90% auto;
+    margin-bottom: 100px;
+}
+
+
+/*======================================================*/
+/*   Sección de tabla dinámica de acciones de compra    */
+/*======================================================*/
+
+table {
+    font-size: 24px;
+    margin: 20px auto 280px;
+    width: 900px;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+caption {
+    font-size: 24px;
+    margin: 0 0px 50px 0;
+    color: rgb(11, 10, 27);
+}
+
+.speed {
+    font-size: 24px;
+    font-weight: 600;
+    color: brown;
+}
+
+th {
+    font-size: 24px;
+    font-weight: normal;
+    padding: 8px;
+    background: #e1e1ee;
+    border-top: 3px solid dodgerblue;
+    border-bottom: 3px solid dodgerblue;
+    color: #2b2d30;
+}
+
+td {
+    padding: 8px;
+    background: #fff;
+    border-bottom: 1px solid #fff;
+    color: #2b2d30;
+    border-top: 1px solid transparent;
+}
+
+tr:hover td {
+    background: #e1e1ee;
+    color: dodgerblue;
+}
+
+.editar {
+    color: dodgerblue;
+    cursor: pointer;
+}
